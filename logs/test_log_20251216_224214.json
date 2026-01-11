@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-12-16T22:42:14.827367",
+  "question": "How do I install this project?",
+  "answer": "Based on the documentation, here are the installation steps:\n\n**Prerequisites:**\n\n*   Python 3.9+\n*   pip\n*   Docker (optional, for containerization)\n\n**Option 1: Local Setup with Virtual Environment**\n\n1.  Clone the repository: `git clone https://github.com/ilhamksyuriadi/workout-recommendation.git`\n2.  Navigate to the project directory: `cd workout-recommendation`\n3.  Create a virtual environment: `python -m venv venv`\n4.  Activate the virtual environment:\n    *   **Windows:** `venv\\Scripts\\activate`\n    *   **macOS/Linux:** `source venv/Scripts/activate`\n\nThese instructions were found in the \"## Installation\" section of the README.md file.",
+  "agent_name": "workout_agent_test"
+}
