@@ -45,7 +45,7 @@ GitHub Repo → Download Docs → Chunk & Index → AI Agent → Answer with Cit
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ilhamksyuriadi/aihero.git
 cd course
 ```
 
@@ -199,6 +199,57 @@ REPO_NAME = "your-repo"
 
 ---
 
+## Evaluation
+
+We evaluate the agent using the following criteria:
+
+- **instructions_follow**: The agent followed the user's instructions
+- **instructions_avoid**: The agent avoided doing things it was told not to do
+- **answer_relevant**: The response directly addresses the user's question
+- **answer_clear**: The answer is clear and correct
+- **answer_citations**: The response includes proper citations or sources when required
+- **completeness**: The response is complete and covers all key aspects of the request
+- **tool_call_search**: Is the search tool invoked?
+
+We do this in two steps:
+
+1. **Generate synthetic questions** (see [`eval/data-gen.py`](eval/data-gen.py))
+2. **Run our agent on the generated questions and check the criteria** (see [`eval/evaluations.py`](eval/evaluations.py))
+
+### Evaluation Results
+
+**Latest Evaluation:** `logs/evaluation_log_20260114_221716.json`
+
+- **Total Questions:** 15
+- **Average Score:** 5.0/5.0 ✅
+- **Tool Usage Rate:** 100.0% ✅
+
+**Criteria Performance:**
+- **instructions_follow:** 100.0% ✅
+- **instructions_avoid:** 100.0% ✅
+- **answer_relevant:** 100.0% ✅
+- **answer_clear:** 100.0% ✅
+- **answer_citations:** 100.0% ✅
+- **completeness:** 100.0% ✅
+- **tool_call_search:** 100.0% ✅
+
+**Conclusion:** The agent achieves perfect scores across all evaluation criteria, demonstrating excellent performance in answering documentation questions with accurate, complete, and properly cited responses.
+
+### Running Evaluations
+
+```bash
+# Generate synthetic questions
+cd eval
+uv run python data-gen.py
+
+# Run evaluation on the questions
+uv run python evaluations.py
+```
+
+Results are saved to the `logs/` directory as JSON files for analysis.
+
+---
+
 ## Project Structure
 
 ```
@@ -211,6 +262,9 @@ course/
 │   ├── logs.py                # Conversation logging
 │   ├── main.py                # CLI entry point
 │   └── streamlit_app.py       # Web UI
+├── eval/                       # Evaluation scripts
+│   ├── data-gen.py            # Generate synthetic questions
+│   └── evaluations.py         # Run evaluation on agent
 ├── logs/                       # Conversation logs (JSON)
 ├── .env                        # API keys (not in git)
 ├── .env.example               # API key template

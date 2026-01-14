@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-01-11T03:58:47.378Z",
+  "num_questions": 15,
+  "questions": [
+    "What are the prerequisites for installing this workout recommendation repository?",
+    "Can I run this project without Docker? If so, how?",
+    "Where is the raw dataset located within the project structure?",
+    "What is the base URL for accessing the API locally?",
+    "How do I build the Docker image for this project?",
+    "The documentation mentions a Jupyter Notebook for data exploration. What is the filename?",
+    "What problem is this project trying to solve?",
+    "What dataset is used in this project, and where can I find its source?",
+    "Is Python 3.8 compatible with this project, or is 3.9 the minimum required version?",
+    "How can I deploy this project to a production environment?",
+    "What type of workout recommendations does this system provide (based on the problem description)?",
+    "Could you provide the exact Docker command for building the image?",
+    "What files are located in the 'data' directory?",
+    "Are there any specific libraries I need to install using pip, beyond the base Python installation?",
+    "If the API is running locally, how do I test if it's accessible?"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "evaluation_summary": {
+    "error": "No valid evaluations completed"
+  },
+  "individual_results": [],
+  "metadata": {
+    "timestamp": "2026-01-11T12:19:27.377142",
+    "num_questions": 15,
+    "agent_name": "workout_agent"
+  }
+}
