@@ -11,7 +11,10 @@
 ## Overview
 
 This project solves the problem of **finding information in large documentation repositories**. Instead of manually searching through multiple markdown files, you can ask natural language questions and get AI-powered answers with accurate citations.
-life url: https://repo-rag-faq.streamlit.app/ (probably not working in the future because of the limitation of free api key)
+
+### Live url
+https://repo-rag-faq.streamlit.app/
+_*notes: probably not working in the future because of the limitation of free api key_
 
 ### Why It's Useful
 
