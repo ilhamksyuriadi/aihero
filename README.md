@@ -11,6 +11,7 @@
 ## Overview
 
 This project solves the problem of **finding information in large documentation repositories**. Instead of manually searching through multiple markdown files, you can ask natural language questions and get AI-powered answers with accurate citations.
+life url: https://repo-rag-faq.streamlit.app/ (probably not working in the future because of the limitation of free api key)
 
 ### Why It's Useful
 
@@ -31,6 +32,13 @@ GitHub Repo → Download Docs → Chunk & Index → AI Agent → Answer with Cit
 3. Creates text and vector search indexes
 4. AI agent searches and generates answers
 5. Provides citations with GitHub links
+
+### Showcase
+1. Initializing Agent
+![rag-faq-initialize-agent](https://github.com/user-attachments/assets/6e830351-e0bc-4c4e-bcbd-06e7a0eeb7e5)
+
+2. Question Example
+![rag-faq-question](https://github.com/user-attachments/assets/631efdcf-0de7-4a1b-85ee-bb54e5568bdf)
 
 ---
 
@@ -384,12 +392,6 @@ uv sync
 - **Subsequent runs are faster** (~10 seconds): Models are cached
 - **Each question takes 5-10 seconds**: Normal for AI processing
 
-### Getting Help
-
-- Check [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) for detailed solutions
-- Check [`STREAMLIT_GUIDE.md`](STREAMLIT_GUIDE.md) for UI-specific help
-- Check [`QUICK_START.md`](QUICK_START.md) for setup instructions
-
 ---
 
 ## Credits / Acknowledgments
@@ -412,37 +414,7 @@ uv sync
 
 ### Contributors
 
-- Your Name - Initial work and development
-
----
-
-## License
-
-This project is licensed under the MIT License - see below for details:
-
-```
-MIT License
-
-Copyright (c) 2026 [Your Name]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+- Ilham Kurnia Syuriadi
 
 ---
 
@@ -466,14 +438,6 @@ uv run python test_app.py
 # Quick import test
 uv run python simple_test.py
 ```
-
-### Project Links
-
-- **Documentation**: See [`app/README.md`](app/README.md)
-- **Streamlit Guide**: See [`STREAMLIT_GUIDE.md`](STREAMLIT_GUIDE.md)
-- **Troubleshooting**: See [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md)
-- **Quick Start**: See [`QUICK_START.md`](QUICK_START.md)
-- **Changes Log**: See [`CHANGES_SUMMARY.md`](CHANGES_SUMMARY.md)
 
 ---
 
